@@ -1,0 +1,15 @@
+
+html, body, div#board {
+    height: 100%;
+}
+
+div#board {
+}
+
+div.piece {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+
