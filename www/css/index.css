@@ -3,6 +3,10 @@ html, body, div#board {
     height: 100%;
 }
 
+body {
+    margin: 0px;
+}
+
 div#board {
 }
 
