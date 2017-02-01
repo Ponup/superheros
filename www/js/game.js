@@ -1,4 +1,16 @@
 define(function(require) {
+
+    if(AdMob) {
+        var config = require('config');
+
+        AdMob.createBanner({
+            adId: config.admobAdId,
+            position: AdMob.AD_POSITION.TOP_CENTER,
+            autoShow: true,
+            isTesting: config.admobTesting 
+        });
+    }
+
     var baseImages = [ 'super_boy.png', 'super_girl.png' ]; 
     var _ = require('_');
     var image = _.sample(baseImages);
